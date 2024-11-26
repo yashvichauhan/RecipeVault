@@ -79,5 +79,29 @@ namespace comp306_group7_recipevault.Controllers
             await _categoryRepository.DeleteCategoryAsync(id);
             return NoContent();
         }
+
+        [HttpPatch("batch-update")]
+        public async Task<IActionResult> BatchUpdateCategories([FromBody] List<CategoryDTO> requests)
+        {
+           if (requests == null || requests.Count == 0)
+            {
+                return BadRequest("Invalid request format.");
+            }
+            foreach (var request in requests) 
+            {
+                var category = await _categoryRepository.GetCategoryByIdAsync(request.CategoryId);
+                if (category == null) {
+                    return NotFound($"Category with ID {request.CategoryId} not found.");
+                }
+
+                if (!string.IsNullOrEmpty(request.Name))
+                    category.Name = request.Name;
+
+                if (!string.IsNullOrEmpty(request.Description)) 
+                    category.Description = request.Description;
+                await _categoryRepository.UpdateCategoryAsync(category);
+            }
+            return NoContent();
+        }
     }
 }
