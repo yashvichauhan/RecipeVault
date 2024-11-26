@@ -1,0 +1,6 @@
+@comp306_group7_recipevault_HostAddress = http://localhost:5114
+
+GET {{comp306_group7_recipevault_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

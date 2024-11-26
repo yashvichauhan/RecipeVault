@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comp306_group7_recipevault", "comp306_group7_recipevault.csproj", "{97AC0F1D-B509-44BB-81D3-0483F23C678A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97AC0F1D-B509-44BB-81D3-0483F23C678A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AC0F1D-B509-44BB-81D3-0483F23C678A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AC0F1D-B509-44BB-81D3-0483F23C678A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AC0F1D-B509-44BB-81D3-0483F23C678A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23DC99FC-69DB-4159-A9CB-3B5CED759EFB}
+	EndGlobalSection
+EndGlobal
